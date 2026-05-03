@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    font-size: 16px;
+    color: #555;
+}
+
+.head {
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.head__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.head img {
+    height: 100vh;
+    min-height: 501px;
+    object-fit: cover;
+    object-position: top center;
+}
+
+.head__info, .head img {
+    flex-grow: 1;
+    flex-basis: 0;
+    min-width: 450px;
+}
+
+.head__info div {
+    padding: 30px;
+    /* width: 70%; */
+}
+
+.head__info h1 {
+    font-weight: 300;
+    line-height: 1.4em;
+    font-size: 4em;
+    margin-bottom: 20px;
+}
+
+.bottom {
+    background-color: #38f;
+    padding: 12px 45px;
+    color: #fff;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border-radius: 5px;
+
+}
+
+.head__info a {
+    text-decoration: none;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+
+.main {
+    margin: 40px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main__content {
+    max-width: 1200px;
+    min-width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main h2 {
+    text-align: center;
+    font-size: 3em;
+    font-weight: 300;
+}
+
+.main p {
+    font-size: 2em;
+    text-align: center;
+    margin-top: 10px;
+    line-height: 1.7em;
+}
+
+.main form {
+    padding: 60px;
+    width: 100%;
+    max-width: 650px;
+    min-width: 200px;
+    border: 1px solid #333;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.main form div {
+    display: flex;
+    flex-direction: column;
+}
+
+.main h3 {
+    font-size: 1.5em;
+    padding: 0 0 30px 0;
+}
+
+.main label {
+    font-size: 1.04em;
+    margin: 15px 0 5px 0;
+}
+
+.main :is(input[type="text"], input[type="password"]) {
+    font-size: 1em;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #333;
+}
+
+.main input[type="submit"] {
+    margin-top: 15px;
+    border: none;
+    padding: 10px 40px;
+    font-size: 0.9em;
+}
+
+/* Responsive Design */
+
+@media (max-heidth: 500px) {
+    .head img {
+        height: auto;
+    }
+}
+
+@media (max-width: 900px) {
+    .head {
+        height: auto;
+    }
+    .head img {
+        height: 400px;
+    }
+}

@@ -1,46 +1,121 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Photo XVI | Welcome</title>
+
+    <!-- Metatags Seo Goolge -->
+    <meta name="description" content="Lensfolio es la comunidad más grande de fotógrafos. Comparte tu trabajo, participa en retos semanales y conecta con entusiastas de todo el mundo.">
+    <meta name="author" content="González Jeremías">
+    <meta name="robots" content="index, nofollow">
+    <link rel="canonical" href="https://www.lensfolio.com" />
+
+    <!-- OpenGraph Metatags -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Lensfolio - Comunidad de fotógrafos">
+    <meta property="og:url" content="https://www.lensfolio.com">
+    <meta property="og:description" content="Lensfolio es la comunidad más grande de fotógrafos. Comparte tu trabajo, participa en retos semanales y conecta con entusiastas de todo el mundo.">
+    <meta name="og:image" content="img/banner-social.png">
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:creator" content="González Jeremías">
+    <meta name="twitter:title" content="Lensfolio - Comunidad de fotógrafos">
+    <meta name="twitter:url" content="https://www.lensfolio.com">
+    <meta name="twitter:description" content="Lensfolio es la comunidad más grande de fotógrafos. Comparte tu trabajo, participa en retos semanales y conecta con entusiastas de todo el mundo.">
+    <meta name="twitter:image" content="img/banner-social.png">
+
+    <!-- Styles Sheets -->
+    <link rel="stylesheet" href="fonts.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <title>Lensfolio — Comunidad de fotógrafos</title>
 </head>
 <body>
+    <!-- Header -->
     <header class="head">
-        <section class="head__info">
-            <div>
-                <h1>The largest community of photo enthusiasts</h1>
-                <a href="#" class="bottom">Join Today</a>
+        <nav class="navbar">
+            <span class="navbar__logo">Lensfolio</span>
+            
+            <div class="navbar__links">
+                <a class="navbar__btn-login" href="#">Iniciar Sesión</a>
+                <input type="checkbox" name="menu" id="menu">
+                <label for="menu" class="open-menu icon-menu" role="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+                </label>
+                <label for="menu" class="close-menu icon-menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+                </label>
+                <ul class="navbar__list">
+                    <li><a href="#">Explorar</a></li>
+                    <li><a href="#">Comunidad</a></li>
+                    <li><a href="#">Aprende</a></li>
+                    <li><a href="#">Concursos</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main -->
+    <main class="main">
+
+        <!-- Hero -->
+        <section class="hero">
+            <div class="hero__info">
+                <p class="hero__tag">PARA FOTÓGRAFOS</p>
+                <h1 class="hero__title">La comunidad más grande de entusiastas</h1>
+                <p class="hero__description">Comparte tu trabajo, descubre nuevas perspectivas y conecta con fotógrafos de todo el mundo.</p>
+                <button class="hero__btn-join">Únete hoy</button>
+            </div>
+            <div class="hero__image">
+                <picture>
+                    <source media="(width >= 900px)"
+                    srcset="img/image1.webp" type="image/webp">
+                    
+                    <source media="(width >= 450) and (width < 900px)"
+                    srcset="img/image1-md.webp" type="image/webp">
+                    
+                    <source media="(width < 450px)"
+                    srcset="img/image1-sm.webp" type="image/webp">
+                    
+                    <img src="img/image1.png" alt="Imagen de una montaña boscosa en San Cristóbal de las Casas">
+                </picture>
+                <div class="overbrand">
+                </div>
+                <p class="hero__image-place">San Cristóbal de las Casas</p>
+            </div>
+            <div class="hero__image">
+                <img src="img/image6.webp" alt="Imagen del Río Kamniška Bistrica con montañas nevadas al fondo">
+                <div class="overbrand">
+                </div>
+                <p class="hero__image-place">Río Kamniška Bistrica</p>
+            </div>
+            <div class="hero__image">
+                <img src="img/image3.webp" alt="Imagen de un girasol (Helianthus annuus)">
+                <div class="overbrand">
+                </div>
+                <p class="hero__image-place">Helianthus annuus</p>
+            </div>
+            <div class="hero__image">
+                <img src="img/image4.webp" alt="Imagen de un camino de tierra que atraviesa un paisaje rural de Todos Santos, Mexico">
+                <div class="overbrand">
+                </div>
+                <p class="hero__image-place">Todos Santos, Mexico</p>
+            </div>
+            <div class="hero__image">
+                <img src="img/image5.webp" alt="Imagen de un paisaje atmosférico de un bosque cubierto de niebla de la Sierra Madre Occidental">
+                <div class="overbrand">
+                </div>
+                <p class="hero__image-place">Sierra Madre Occidental</p>
+            </div>
+            <div class="hero__image">
+                <img src="img/image2.webp" alt="Imagen de una cascada tropical rodeada de densa vegetación y formaciones rocosas en Meghalaya">
+                <div class="overbrand">
+                </div>
+                <p class="hero__image-place">Meghalaya</p>
             </div>
         </section>
-        <img src="img/showcase.jpg" alt="Hermoso paisaje">
-    </header>
-    <main class="main">
-        <div class="main__content">
-            <h2>Ready to join?</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
-            <form action="#">
-                <h3>Sign up today</h3>
-                <div>
-                    <label for="name">First Name</label>
-                    <input type="text" name="name" id="name">
 
-                </div>
-                <div>
-                    <label for="lastname">Last Name</label>
-                    <input type="text" name="lastname" id="lastname">
-                </div>
-                <div>
-                    <label for="password">Password</label>
-                    <input type="password" name="password" id="password">
-                </div>
-                <input type="submit" value="Sign Up" class="bottom">
-            </form>
-        </div>
     </main>
 </body>
 </html>

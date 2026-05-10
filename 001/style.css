@@ -53,8 +53,6 @@ body::selection {
     width: auto;
 }
 
-/* btn - login, navbar */
-
 .navbar__btn-login, .hero__btn-join,
 .join__form input[type="submit"], 
 .latest-banner__links-created {

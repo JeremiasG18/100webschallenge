@@ -27,6 +27,12 @@ body::selection {
     color: var(--white-mode);
 }
 
+/* Max Width for this sections */
+.navbar, .hero, .offer, .community,
+.join, .latest-banner {
+    max-width: 1400px;
+}
+
 /* Navbar */
 
 .navbar {

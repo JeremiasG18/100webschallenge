@@ -31,7 +31,7 @@
 @font-face {
     font-family: 'DM Sans';
     src:url('../fonts/DMSans/DMSans-Medium.woff2') format('woff2'),
-    url('../fonts/DMSans/DMSans-Medium.ttf') format('woff'),
+    url('../fonts/DMSans/DMSans-Medium.woff') format('woff'),
     url('../fonts/DMSans/DMSans-Medium.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;

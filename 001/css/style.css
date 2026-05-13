@@ -13,8 +13,9 @@
     --bgcolor-btn-hover: #3f3f3d;
     --font-family1: 'Playfair Display';
     --font-family2: 'DM Sans';
-    --overbrand: #1a1a1a77;
+    --overlay: #1a1a1a77;
     --border-navbar: #1a1a1a5b;
+    --btn-menu: #fff0;
 }
 
 body{ 
@@ -88,7 +89,7 @@ body::selection {
 
 .btn-menu {
     display: flex;
-    background-color: #fff0;
+    background-color: var(--btn-menu);
     border: none;
 }
 
@@ -181,6 +182,17 @@ body::selection {
     position: relative;
 }
 
+.hero__image::after {
+    content: '';
+    background-color: var(--overlay);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
 .hero__info,
 .hero div:nth-child(2),
 .hero div:last-child {
@@ -192,16 +204,6 @@ body::selection {
 .hero div:nth-child(5),
 .hero div:nth-child(6) {
     grid-column: span 2;
-}
-
-.overbrand {
-    width: 100%;
-    height: 100%;
-    background-color: var(--overbrand);
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 10;
 }
 
 .hero__image-place {
@@ -223,7 +225,7 @@ img {
 /* Offers */
 
 .offer, .community, .join, .latest-banner {
-    padding: 60px 25px;
+    padding: clamp(60px, 6.5vw, 70px) 25px;
     font-size: 0.90rem;
 }
 
@@ -266,7 +268,6 @@ img {
 
 .offer__item-icon {
     display: inline-block;
-    /* padding: 20px 0px; */
     padding-bottom: 20px;
 }
 
@@ -401,13 +402,14 @@ img {
 .latest-banner__title {
     max-width: 500px;
     text-align: center;
-    font-size: clamp(2rem, 3.2vw, 3rem);
+    font-size: clamp(1.8rem, 3.2vw, 2.4rem);
 }
 
 .latest-banner__description {
     max-width: 470px;
     margin-bottom: 25px;
     text-align: center;
+    line-height: 1.8rem;
 }
 
 .latest-banner__links {
@@ -511,11 +513,6 @@ img {
         height: auto;
         padding: 0;
         margin: 0 auto;
-        justify-content: center;
-    }
-    
-    #menu:checked ~ .navbar__list {
-        flex-direction: row;
         justify-content: center;
     }
     

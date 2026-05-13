@@ -2,34 +2,40 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: var(--font-family2);
+    font-family: var(--secundary-font);
 }
 
 :root {
-    --black-mode: #30302e;
-    --white-mode: #ffffff;
-    --color-bm: #777;
+    /* Typography */
+    --primary-font: 'Playfair Display';
+    --secundary-font: 'DM Sans';
+
+    /* Colors */
+    --primary-color: #ffffff;
+    --secundary-color: #30302e;
+
+    /* Color buttons */
     --bgcolor-btn: #1a1a1a;
     --bgcolor-btn-hover: #3f3f3d;
-    --font-family1: 'Playfair Display';
-    --font-family2: 'DM Sans';
+
+    /* Overlay for images */
     --overlay: #1a1a1a77;
+
+    /* Navigation bar color */
     --border-navbar: #1a1a1a5b;
-    --btn-menu: #fff0;
 }
 
 body{ 
-    background-color: var(--white-mode);
+    background-color: var(--primary-color);
     display: grid;
     place-content: center;
 }
 
 body::selection {
     background-color: var(--bgcolor-btn);
-    color: var(--white-mode);
+    color: var(--primary-color);
 }
 
-/* Max Width for this sections */
 .navbar, .hero, .offer, .community,
 .join, .latest-banner {
     max-width: 1400px;
@@ -46,13 +52,15 @@ body::selection {
     align-items: center;
     position: relative;
     padding: 18px 25px;
-    background-color: var(--white-mode);
+    background-color: var(--primary-color);
 }
 
 .navbar__logo {
     font-family: 'Playfair Display';
     font-weight: bold;
     font-size: 1.3rem;
+    text-decoration: none;
+    color: var(--bgcolor-btn);
 }
 
 .navbar__links {
@@ -67,13 +75,14 @@ body::selection {
     font-weight: 300;
     background-color: var(--bgcolor-btn);
     text-decoration: none;
-    color: var(--white-mode);
+    color: var(--primary-color);
     border-radius: 5px;
     margin-right: 10px;
     font-size: 0.95rem;
     border: none;
     text-wrap: nowrap;
     padding: 10px 32px;
+    transition: background-color 0.3s ease;
 }
 
 .navbar__btn-login {
@@ -89,7 +98,7 @@ body::selection {
 
 .btn-menu {
     display: flex;
-    background-color: var(--btn-menu);
+    background-color: inherit;
     border: none;
 }
 
@@ -100,7 +109,7 @@ body::selection {
 .navbar__list {
     list-style: none;
     display: none;
-    background-color: var(--white-mode);
+    background-color: var(--primary-color);
     position: absolute;
     z-index: 30;
     left: 0;
@@ -120,7 +129,7 @@ body::selection {
 
 .navbar__list a {
     text-decoration: none;
-    color: var(--black-mode);
+    color: var(--secundary-color);
     padding: 8px 10px;
     border-radius: 5px;
     font-size: 0.85rem;
@@ -162,7 +171,7 @@ body::selection {
 }
 
 .hero__title {
-    font-family: var(--font-family1);
+    font-family: var(--primary-font);
     font-weight: 400;
     font-size: clamp(2rem, 3.2vw, 3rem);
     line-height: 3rem;
@@ -207,7 +216,7 @@ body::selection {
 }
 
 .hero__image-place {
-    color: var(--white-mode);
+    color: var(--primary-color);
     font-size: 0.85rem;
     position: absolute;
     bottom: 0;
@@ -243,7 +252,7 @@ img {
 .community__info-title,
 .join__info-title,
 .latest-banner__title {
-    font-family: var(--font-family1);
+    font-family: var(--primary-font);
     font-size: clamp(1.6rem, 2.5vw, 2.2rem);
     font-weight: 400;
 }
@@ -353,7 +362,7 @@ img {
 }
 
 .join__info-number span {
-    font-family: var(--font-family1);
+    font-family: var(--primary-font);
     font-size: 2.2rem;
 }
 
@@ -372,7 +381,7 @@ img {
 }
 
 .join__form-title {
-    font-family: var(--font-family1);
+    font-family: var(--primary-font);
     font-size: 1.5rem;
     font-weight: 500;
     margin-bottom: 20px;
@@ -459,7 +468,7 @@ img {
 }
 
 .footer__logo {
-    font-family: var(--font-family1);
+    font-family: var(--primary-font);
     font-weight: bold;
 }
 
